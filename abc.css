@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(11, 153, 16, 0.9);
+
+}
+
+.section{
+    margin: 100px auto;
+    background-color: #ffffff;
+    width: 40%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.nav__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__icon{
+    color: aliceblue    ;
+}
+.nav__icon:active{
+    color: red;
+}
+
+.image {
+    max-width: 90%;
+    transition: 0.5s;
+}
+img {
+        width: 100%;
+}
+
+.content{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+ .options{
+    color:aliceblue;
+    font-size: 20px;
+    margin-left: 15px;
+} 
+.options__size{
+    color:black;
+    background-color: bisque;
+    margin-right: 5px;
+    padding: 0 6px 0 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.option__color{
+    display: flex;
+	align-items: center;
+    margin-top: 10px;
+}
+.option__color span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.option__color span.red{
+    background-color: red;
+}
+.option__color span.blue{
+    background-color: blue;
+}
+.option__color span.green{
+    background-color: green;
+}
+
+.button{
+    color: aliceblue;
+    background-color: rgb(12, 166, 12);
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+}
+.options{
+    visibility: hidden;
+    transition-delay: 0.2s;
+}
+
+.section:hover .options{
+    visibility: visible;
+}
+
+.button:active {
+    background-color: rgb(9, 101, 9);
+}
+
+.section:hover .image {
+	transform: translateY(-90px) rotate(-20deg);
+}
+
+.section:hover .content{
+    transform: translateY(-70px)
+}
+.section:hover .options{
+    transform: translateY(-20px)
+}
